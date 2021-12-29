@@ -26,9 +26,9 @@ skate_news_data = [
 def home():
     return render_template('homePage.html', title="Home")
 
-@app.route("/news")
+@app.route("/posts")
 def news():
-    return render_template('SK8News.html', posts=skate_news_data, title="Sk8 Posts")
+    return render_template('SK8Posts.html', posts=skate_news_data, title="Sk8 Posts")
 
 
 @app.route("/tricks")
